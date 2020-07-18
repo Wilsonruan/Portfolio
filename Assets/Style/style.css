@@ -16,7 +16,7 @@ html, body{
 }
 
 #projector {
-  position: absolute; 
+  /* position: absolute;  */
   top: 0px;
   left: 0px;
   width:100%;
@@ -55,5 +55,114 @@ html, body{
 	opacity:0;
 	top:303px;
 	left:0;
-    filter: alpha(opacity=0);
+    /* filter: alpha(opacity=0); */
+}
+h4 {
+	margin: auto 5px auto 5px ;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+header {
+	border-bottom: 3px solid white;
+	opacity: 0.8;
+}
+header h1{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: white;
+}
+
+h2 {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+header nav ul li{
+  margin: 5px;
+}
+
+.adjustment{
+  padding-top: 30px;
+  margin: 15px;
+  max-width: 900px;
+}
+
+.input-textarea {
+  min-height: 120px;
+}
+
+.img-thumbnail{
+  margin: 15px 0 15px 0;
+  width: 500px;
+  height: 350px;
+}
+
+.jumbotron { 
+  background: rgba(255, 255, 255, 0.75)
+}
+
+.footer {
+  background: rgba(255, 255, 255, 0.8)
+}
+
+.jumbotron:hover{
+  background: rgba(255, 255, 255)
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.image:hover {
+  opacity: 0.3;
+}
+
+.container-inside:hover .middle{
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 16px;
+  line-height: 10px;
+}
+
+.outer {
+  position: relative;
+}
+ 
+.outer > .inner {
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+ 
+.inner {
+  position: relative;
+  pointer-events: none;
+  z-index: 1;
+}
+ 
+.inner a {
+  pointer-events: all;
+}
+
+.fa-github {
+  color: black;
+  opacity: 0.5;
+}
+
+.fa-github:hover {
+  color: blue;
+  opacity: 1;
 }
