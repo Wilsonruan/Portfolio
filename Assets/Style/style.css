@@ -55,7 +55,7 @@ html, body{
 	opacity:0;
 	top:303px;
 	left:0;
-    /* filter: alpha(opacity=0); */
+    filter: alpha(opacity=0);
 }
 h4 {
 	margin: auto 5px auto 5px ;
